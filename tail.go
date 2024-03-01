@@ -29,7 +29,7 @@ func showLast(fileName string, linesToShow int) {
     lines := 0
     b := make([]byte, 1)
     var newLine byte = '\n'
-    for lines < linesToShow {
+    for lines <= linesToShow {
 	    _, err = f.Seek(-1, SEEK_CUR)
 	    if err != nil {
 	        break
